@@ -48,6 +48,8 @@ RUN dpkg --add-architecture i386 && \
         texinfo             \
         cmake               \
         wget                \
+        apt-transport-https \
+        ca-certificates     \
         software-properties-common \
         python-software-properties && \
     apt-add-repository "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.8 main" && \
