@@ -12,6 +12,18 @@ Dockerfile for Nim cross-compiler
 
 # Usage
 
+## Example compilation
+```
+echo 'echo "Hello World"' > hello.nim
+docker run --rm -v `pwd`:/usr/local/src \
+   chrishellerappsian/docker-nim-cross:latest \
+   nim c --os:windows --cpu:amd64 --out:hello64.exe hello.nim
+
+docker run --rm -v `pwd`:/usr/local/src \
+    chrishellerappsian/docker-nim-cross:latest \
+    nim c --os:macosx --cpu:amd64 --out:hello32.osx.bin hello.nim
+```
+
 Look at example directory.
 
 ## Directories in container
