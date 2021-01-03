@@ -8,7 +8,7 @@ FROM debian:jessie
 # This supports compiling Nim programs to run on:
 # - 32 and 64 bit Mac OS X
 # - 32 and 64 bit Windows
-# - 64 bit Linux
+# - 32 and 64 bit Linux
 # - Musl
 #
 # See
@@ -48,6 +48,7 @@ RUN dpkg --add-architecture i386 && \
         texinfo             \
         cmake               \
         wget                \
+        gcc-multilib        \
         apt-transport-https \
         ca-certificates     \
         software-properties-common \

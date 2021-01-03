@@ -8,6 +8,7 @@ Dockerfile for Nim cross-compiler
 - CrossCompiler
     - Windows: [mingw-w64](https://packages.debian.org/search?keywords=mingw-w64)
     - MacOS: [tpoechtrager/osxcross](https://github.com/tpoechtrager/osxcross#packaging-the-sdk) -> [andrewd/osxcross](https://hub.docker.com/r/andrewd/osxcross/~/dockerfile/)
+    - Linux: gcc-multilib is installed so compiling 32 bit works
     - Linux: [musl](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=musl)
 
 # Usage
