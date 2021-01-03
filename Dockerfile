@@ -24,7 +24,7 @@ COPY install-nim.sh cross-compile.nim.cfg /root/
 ENV OSXCROSS_REVISION=9498bfdc621716959e575bd6779c853a03cf5f8d
 ENV OSXCROSS_SDK_VERSION=10.11
 ENV OSXCROSS_SDK_REMOTE_ROOT_DIR=https://github.com/apriorit/osxcross-sdks/raw/master/
-ENV CHOOSENIM_CHOOSE_VERSION=1.0.10
+ENV CHOOSENIM_CHOOSE_VERSION=1.2.8
 
 # NOTE: The Docker Hub's build machines run varying types of CPUs, so an image
 # built with `-march=native` on one of those may not run on every machine - I
