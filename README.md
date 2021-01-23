@@ -27,6 +27,19 @@ docker run --rm -v `pwd`:/usr/local/src \
 
 Look at example directory.
 
+## Adding libraries
+
+See the example/libssh directory for an example of adding an
+updated library to the build process.
+
+The example brings [libssh2](https://libssh2.org/) up to date so that the Nim
+[ba0f3/ssh2](https://github.com/ba0f3/ssh2.nim) module can be
+built and tested.
+
+See the test scripts ``test_sftp`` and ``test_scp`` for verifying
+sftp and scp work properly from within your Nim code. Each shell script
+should work unmodified to access the [public Rebex test server](https://test.rebex.net/)
+
 ## Directories in container
 
 - /usr/local/src/: working dir
